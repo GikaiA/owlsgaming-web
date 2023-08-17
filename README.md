@@ -1,1 +1,1 @@
-# owlsgamingclub-web
+# owlsgaming-web
