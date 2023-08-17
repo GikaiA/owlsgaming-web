@@ -1,17 +1,5 @@
 .App {
-  text-align: center;
   font-family: 'Times New Roman', Times, serif;
-}
-
-.color-transition{
-  width: 100px;
-  height: 100px;
-  background-color: #CC0000;
-  transition: background-color 1s ease; 
-}
-
-.color-transition:hover{
-  background-color: #003366;
 }
 
 

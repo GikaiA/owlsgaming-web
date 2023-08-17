@@ -1,0 +1,19 @@
+.color-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Place it behind the content */
+    background: linear-gradient(45deg, #CC0000, #003366);
+    animation: colorTransition 10s infinite alternate;
+  }
+  
+  @keyframes colorTransition {
+    0% {
+      background: linear-gradient(45deg, #CC0000, #003366);
+    }
+    100% {
+      background: linear-gradient(45deg, #003366, #CC0000);
+    }
+  }

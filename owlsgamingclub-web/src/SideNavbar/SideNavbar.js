@@ -6,9 +6,9 @@ function SideNavbar() {
   return (
     <div className="side-nav">
       <div className="side-nav-container">
-        <Link to="/" className="navbar-titles">
+        {/* <Link to="/" className="navbar-titles">
           Home
-        </Link>
+        </Link> */}
       </div>
       <ul className="nav-links">
         <li>
