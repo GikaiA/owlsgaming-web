@@ -1,6 +1,9 @@
-.App {
+.app-container {
   font-family: 'Times New Roman', Times, serif;
+  display: flex;
 }
 
-
-
+.content-container{
+  flex: 1;
+  padding-left: 260px;
+}

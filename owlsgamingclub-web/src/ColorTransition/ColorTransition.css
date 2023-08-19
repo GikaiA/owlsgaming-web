@@ -1,19 +1,21 @@
 .color-transition {
+    width: 100%;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
     z-index: -1; /* Place it behind the content */
-    background: linear-gradient(45deg, #CC0000, #003366);
-    animation: colorTransition 10s infinite alternate;
+    background-color: #CC0000; /* Start color */
+    transition: background-color 3s ease;
+    animation: color-transition 10s infinite; 
+   }
+  
+   @keyframes color-transition{
+    0% { background-color: #CC0000; } /* Initial background color */
+    20% { background-color: #003366; } /* Second background color */
+    40% { background-color: #CC0000; } /* Third background color */
+    60% { background-color: #003366; } /* Fourth background color */
+    80% { background-color: #CC0000; } /* Fifth background color */
+    100% { background-color: #CC0000; } /* Return to initial background color */
   }
   
-  @keyframes colorTransition {
-    0% {
-      background: linear-gradient(45deg, #CC0000, #003366);
-    }
-    100% {
-      background: linear-gradient(45deg, #003366, #CC0000);
-    }
-  }

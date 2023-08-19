@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import owlsesports from "../images/owls-esports.png"
+
 import "./SideNavbar.css";
 
 function SideNavbar() {
   return (
     <div className="side-nav">
-      <div className="side-nav-container">
-        {/* <Link to="/" className="navbar-titles">
-          Home
-        </Link> */}
+      <div className="logo">
+        <img src={owlsesports} alt="owlsesports-logo" width={250} height={250}/>
       </div>
       <ul className="nav-links">
         <li>
@@ -18,7 +18,7 @@ function SideNavbar() {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/games">Games</Link>
+          <Link to="/teams">Teams</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>

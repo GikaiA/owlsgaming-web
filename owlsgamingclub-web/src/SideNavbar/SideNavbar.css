@@ -1,6 +1,31 @@
-.nav-links{
-    color: white;
-    list-style: none; 
-    font-size: 20px;   
-    text-decoration: none;
+.side-nav {
+  width: 250px;
+  height: 100vh;
+  background-color: transparent;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  border-right: 5px solid #555;
+  border-color: white;
+}
+
+.nav-links {
+  padding-top: 400px;
+}
+
+.nav-links li {
+  list-style: none;
+  font-size: 47px;
+  padding: 20px;
+  height: 300;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s, color 0.3s; /* Add transition */
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: black;
 }
