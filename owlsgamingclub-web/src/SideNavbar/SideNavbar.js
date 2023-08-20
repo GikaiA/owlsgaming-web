@@ -1,27 +1,39 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
-import owlsesports from "../images/owls-esports.png"
-
+import owlsesports from "../images/owls-esports.png";
+import TeamsSubMenu from "../TeamsSubMenu/TeamsSubMenu";
 import "./SideNavbar.css";
 
 function SideNavbar() {
+  const [showSubMenu, setShowSubMenu] = useState(false);
+
+  const toggleSubMenu = () => {
+    setShowSubMenu(!showSubMenu);
+  };
   return (
     <div className="side-nav">
       <div className="logo">
-        <img src={owlsesports} alt="owlsesports-logo" width={250} height={250}/>
+        <img src={owlsesports} alt="owlsesports-logo" width={250} height={250} />
       </div>
-      <ul className="nav-links">
+      <ul className="sidenav-links">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" className="nav-link">
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/about" className="nav-link">
+            About
+          </Link>
+        </li>
+        <li onClick={toggleSubMenu}>
+        <button className="nav-link">Teams</button>
+        {showSubMenu && <TeamsSubMenu/>}
         </li>
         <li>
-          <Link to="/teams">Teams</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" className="nav-link">
+            Contact
+          </Link>
         </li>
       </ul>
     </div>

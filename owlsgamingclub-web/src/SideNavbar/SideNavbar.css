@@ -1,31 +1,54 @@
 .side-nav {
   width: 250px;
   height: 100vh;
-  background-color: transparent;
+  background-color: transparent; /* Background color for the sidebar */
   transition: left 0.3s ease;
   overflow-y: auto;
-  border-right: 5px solid #555;
+  border-right: 3px solid #555;
   border-color: white;
 }
 
-.nav-links {
-  padding-top: 400px;
+.sidenav-links {
+  padding-top: 20px; /* Adjust padding as needed */
 }
 
-.nav-links li {
+.sidenav-links li {
   list-style: none;
-  font-size: 47px;
-  padding: 20px;
-  height: 300;
+  font-size: 34px; /* Adjust font size as needed */
+  padding: 11px; /* Adjust padding as needed */
+  color: white;
 }
 
-.nav-links a {
+.sidenav-links a {
   text-decoration: none;
   color: white;
-  transition: background-color 0.3s, color 0.3s; /* Add transition */
+  display: block; /* To make the entire list item clickable */
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 34px;
 }
 
-.nav-links a:hover {
+.sidenav-links a:hover {
   background-color: white;
   color: black;
+}
+
+/* Remove underlines from links */
+.sidenav-links a:hover {
+  text-decoration: none;
+}
+
+.nav-link{
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 34px;
+  padding-right: 12px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+
+}
+
+.nav-link:hover{
+background-color: white;
+color: black;
 }

@@ -1,0 +1,30 @@
+/* .submenu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    z-index: 1;
+  }
+  
+  .submenu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .submenu li {
+    padding: 10px;
+  }
+  
+  .submenu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .submenu a:hover {
+    background-color: white;
+    color: black;
+  }
+   */
