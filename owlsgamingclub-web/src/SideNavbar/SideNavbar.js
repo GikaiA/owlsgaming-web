@@ -27,8 +27,8 @@ function SideNavbar() {
           </Link>
         </li>
         <li onClick={toggleSubMenu}>
-        <button className="nav-link">Teams</button>
-        {showSubMenu && <TeamsSubMenu/>}
+        <button className={`nav-link ${showSubMenu ? 'active' : ''}`}>Teams</button>
+        {showSubMenu && <TeamsSubMenu isActive={showSubMenu}/>}
         </li>
         <li>
           <Link to="/contact" className="nav-link">
