@@ -5,7 +5,7 @@ import './TeamsSubMenu.css';
 function TeamsSubMenu({isActive}) {
   return (
     <div className={`submenu ${isActive ? 'active': ''}`}>
-      <ul>
+      <ul className='submenu-active'>
         <li>
           <Link to="/teams/league-of-legends">League of Legends</Link>
         </li>

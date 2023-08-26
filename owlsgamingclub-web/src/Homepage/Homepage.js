@@ -16,7 +16,7 @@ function Homepage() {
         setWordIndex((wordIndex + 1) % words.length);
         setDisplayedText('');
       }
-    }, 120); // Typing speed in milliseconds
+    }, 220); // Typing speed in milliseconds
 
     return () => clearInterval(typingInterval);
   }, [characterIndex, wordIndex]);

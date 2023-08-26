@@ -1,0 +1,22 @@
+.rocket-league-section{
+padding-right:  200px; 
+}
+
+
+
+
+.rl-image{
+    width: 250px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-top: 75px;
+}
+
+.rl-paragraph{
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}

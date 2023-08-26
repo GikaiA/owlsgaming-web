@@ -6,6 +6,7 @@
   overflow-y: auto;
   border-right: 3px solid #555;
   border-color: white;
+  overflow-x: hidden;
 }
 
 .sidenav-links {
@@ -14,7 +15,7 @@
 
 .sidenav-links li {
   list-style: none;
-  font-size: 34px; /* Adjust font size as needed */
+  font-size: 22px; /* Adjust font size as needed */
   padding: 11px; /* Adjust padding as needed */
   color: white;
 }
@@ -24,7 +25,7 @@
   color: white;
   display: block; /* To make the entire list item clickable */
   transition: background-color 0.3s, color 0.3s;
-  font-size: 34px;
+  font-size: 27px;
 }
 
 .sidenav-links a:hover {
@@ -41,7 +42,7 @@
   color: white;
   background-color: transparent;
   border: none;
-  font-size: 34px;
+  font-size: 32px;
   padding-right: 12px;
   cursor: pointer;
   transition-duration: 0.3s;
