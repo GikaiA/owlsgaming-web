@@ -23,7 +23,8 @@ function Homepage() {
 
   return (
     <div className='homepage-section'>
-      <h1 className='homepage-title'> Owls Gaming Club {displayedText} </h1>
+      <p className='homepage-title'> Owls Gaming Club</p>
+      <p className='animated-text'>{displayedText}</p>
     </div>
   )
 }

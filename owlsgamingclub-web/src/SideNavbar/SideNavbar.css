@@ -1,11 +1,9 @@
 .side-nav {
   width: 250px;
   height: 100vh;
-  background-color: transparent; /* Background color for the sidebar */
+  background-color: #003366; /* Background color for the sidebar */
   transition: left 0.3s ease;
   overflow-y: auto;
-  border-right: 3px solid #555;
-  border-color: white;
   overflow-x: hidden;
 }
 

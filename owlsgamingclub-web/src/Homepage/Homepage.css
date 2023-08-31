@@ -6,6 +6,14 @@
 .homepage-title{
     color: white;
     font-size: 110px;
-    padding-top: 120px;
+    padding-top: 4.5px;
     padding-right: 200px;
+    display: flex;
+}
+
+.animated-text{
+    color: white;
+    font-size: 110px;
+    padding-top: 4.3px;
+    padding-right: 200px;  
 }
