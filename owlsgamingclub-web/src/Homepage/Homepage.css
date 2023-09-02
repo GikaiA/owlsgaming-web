@@ -1,6 +1,10 @@
 .homepage-section{
     text-align: center;
-    padding-top: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ensure the container takes up the full viewport height */
 }
 
 
@@ -16,4 +20,3 @@
     padding-right: 200px;
     font-weight: bold;
 }
-
