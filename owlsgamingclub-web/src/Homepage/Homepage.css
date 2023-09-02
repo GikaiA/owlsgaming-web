@@ -1,19 +1,20 @@
 .homepage-section{
     text-align: center;
+    display: flex;
+    padding-top: 360px;
 }
 
 
 .homepage-title{
     color: white;
     font-size: 110px;
-    padding-top: 4.5px;
     padding-right: 200px;
-    display: flex;
 }
 
-.animated-text{
+.Typewriter{
     color: white;
     font-size: 110px;
-    padding-top: 4.3px;
-    padding-right: 200px;  
+    padding-top: 100px;
+    padding-right: 200px;
 }
+

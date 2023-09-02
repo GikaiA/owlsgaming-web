@@ -1,30 +1,30 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import Typewriter from 'typewriter-effect';
 import './Homepage.css';
 function Homepage() {
-  const words = ['Competitive', 'Community', 'Innovative']; // Replace with your words
-  const [wordIndex, setWordIndex] = useState(0);
-  const [characterIndex, setCharacterIndex] = useState(0);
-  const [displayedText, setDisplayedText] = useState('');
+  const [showTypewriter, setShowTypewriter] = useState(true);
 
   useEffect(() => {
-    const typingInterval = setInterval(() => {
-      if (characterIndex < words[wordIndex].length) {
-        setDisplayedText(prevText => prevText + words[wordIndex][characterIndex]);
-        setCharacterIndex(characterIndex + 1);
-      } else {
-        setCharacterIndex(0);
-        setWordIndex((wordIndex + 1) % words.length);
-        setDisplayedText('');
-      }
-    }, 220); // Typing speed in milliseconds
+    // Delay the disappearance of the typewriter effect
+    const timeout = setTimeout(() => {
+      setShowTypewriter(false);
+    }, 5000); // Adjust the delay as needed
 
-    return () => clearInterval(typingInterval);
-  }, [characterIndex, wordIndex]);
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <div className='homepage-section'>
-      <p className='homepage-title'> Owls Gaming Club</p>
-      <p className='animated-text'>{displayedText}</p>
+      <p className='homepage-title'>Owls Gaming Club</p>
+      <Typewriter className="custom-typewriter" options={{
+              strings: ['Competitive', 'Community', 'Innovative'],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 50,
+              delay: 1000,
+            }}
+          />
+      <span className='typewriter'></span>
     </div>
   )
 }
