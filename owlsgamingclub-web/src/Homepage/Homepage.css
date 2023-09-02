@@ -1,6 +1,5 @@
 .homepage-section{
     text-align: center;
-    display: flex;
     padding-top: 360px;
 }
 
@@ -14,7 +13,7 @@
 .Typewriter{
     color: white;
     font-size: 110px;
-    padding-top: 100px;
     padding-right: 200px;
+    font-weight: bold;
 }
 
