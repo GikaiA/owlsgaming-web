@@ -34,6 +34,7 @@
 .sidenav-links a:hover {
   text-decoration: underline;
   text-decoration-color:#CC0000 ;
+  text-decoration-thickness: 5px;
 }
 
 .nav-link{
@@ -51,4 +52,5 @@
 .nav-link:hover{
 text-decoration: underline;
 text-decoration-color: #CC0000;
+text-decoration-thickness: 5px;
 }

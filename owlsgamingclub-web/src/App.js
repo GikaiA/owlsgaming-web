@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="app-container">
       <BrowserRouter>
-      <ColorTransition/>
+      {/* <ColorTransition/> */}
         <SideNavbar />
         <div className='content-container'>
         <Routes>
