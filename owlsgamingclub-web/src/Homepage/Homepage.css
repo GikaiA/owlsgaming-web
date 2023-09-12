@@ -19,4 +19,9 @@
     font-size: 110px;
     padding-right: 200px;
     font-weight: bold;
+    caret-color:#CC0000;
+}
+
+.Typewriter__cursor{
+    color: #CC0000;
 }

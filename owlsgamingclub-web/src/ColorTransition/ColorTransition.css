@@ -5,17 +5,19 @@
     top: 0;
     left: 0;
     z-index: -1; /* Place it behind the content */
-    background-color: #CC0000; /* Start color */
+    background-color: #000000; /* Start color */
     transition: background-color 3s ease;
     animation: color-transition 10s infinite; 
    }
-  
-   @keyframes color-transition{
-    0% { background-color: #CC0000; } /* Initial background color */
-    20% { background-color: #003366; } /* Second background color */
-    40% { background-color: #CC0000; } /* Third background color */
-    60% { background-color: #003366; } /* Fourth background color */
-    80% { background-color: #CC0000; } /* Fifth background color */
-    100% { background-color: #CC0000; } /* Return to initial background color */
+  body{
+    background-color: #000000;
   }
-  
+   /* @keyframes color-transition{
+    0% { background-color: #CC0000; }
+    20% { background-color: #003366; }
+    40% { background-color: #CC0000; }
+    60% { background-color: #003366; } 
+    80% { background-color: #CC0000; } 
+    100% { background-color: #CC0000; } 
+  }
+   */

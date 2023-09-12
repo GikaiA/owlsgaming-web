@@ -1,7 +1,8 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import BackgroundSlider from 'react-background-slider';
+// import BackgroundSlider from 'react-background-slider';
 import './Homepage.css';
+import ColorTransition from '../ColorTransition/ColorTransition';
 
 function Homepage() {
  
@@ -15,6 +16,7 @@ function Homepage() {
 
   return (
     <div className='homepage-section'>
+      <ColorTransition/>
       {/* <BackgroundSlider images={images} duration={5} transition={2}/> */}
       <p className='homepage-title'>Owls Gaming Club</p>
       <Typewriter className="custom-typewriter" options={{
