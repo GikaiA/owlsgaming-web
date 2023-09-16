@@ -1,11 +1,19 @@
+.LOL-section{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-left: 300px;
+}
+
 .LOL-image {
-  width: 600px;
-  height: 600px;
-  padding-left: 550px;
+  width: 200px;
+  height: 200px;  
+
 }
 
 .LOL-text {
   color: white;
-  font-size: 30px;
-  padding-left: 450px;
+  font-size: 18px;
+  padding-right: 250px;
+  text-align: center;
 }

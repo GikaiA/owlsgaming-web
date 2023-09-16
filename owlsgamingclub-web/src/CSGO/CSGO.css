@@ -1,10 +1,38 @@
+.csgo-section{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: slideIn 1s ease-in-out;
+    padding-top: 150px;
+}
+
 .csgo-image{
-    padding-left: 300px;
-    padding-top: 240px;
+    width: 450px;
+    height: 280px;
+    max-width: 90%; /* Limit maximum width for smaller screens */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0; /* Reset padding */
+    animation: slideIn 1s ease-in-out 0.5s;
 }
 
 .csgo-text{
-    font-size: 30px;
-    padding-left: 500px;
     color: white;
+    font-size: 18px;
+    padding: 20px 0; /* Add padding for smaller screens */
+    text-align: center;
+    padding-right: 250px;
+    animation: slideIn 1s ease-in-out 1s;
 }
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

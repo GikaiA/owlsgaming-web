@@ -5,16 +5,6 @@ import TeamsSubMenu from "../TeamsSubMenu/TeamsSubMenu";
 import "./SideNavbar.css";
 
 function SideNavbar() {
-  const [showSubMenu, setShowSubMenu] = useState(false);
-
-  const toggleSubMenu = (open) => {
-    setShowSubMenu(open);
-  };
-
-  const closeSubMenu = () =>{
-    setShowSubMenu(false)
-  }
-
   return (
     <div className="side-nav">
       <div className="logo">
@@ -31,9 +21,9 @@ function SideNavbar() {
             About
           </Link>
         </li>
-        <li onClick={toggleSubMenu}>
-        <button className={`nav-link ${showSubMenu ? 'active' : ''}`}>Teams</button>
-        {showSubMenu && <TeamsSubMenu isActive={showSubMenu} toggleSubMenu = {toggleSubMenu} closeSubMenu={closeSubMenu}/>}
+        <li>
+        <button className='nav-link'>Teams</button>
+        { <TeamsSubMenu/>}
         </li>
         <li>
           <Link to="/contact" className="nav-link">

@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './TeamsSubMenu.css';
 
-function TeamsSubMenu({isActive, toggleSubMenu, closeSubMenu}) {
-  return isActive ? (
-    <div className={`submenu ${isActive ? 'active': ''}`}>
+function TeamsSubMenu() {
+  return(
+    <div className='submenu'>
       <ul className='submenu-active'>
         <li>
-          <Link to="/teams/league-of-legends" onClick={() => toggleSubMenu(true)}>League of Legends</Link>
+          <Link to="/teams/league-of-legends">League of Legends</Link>
         </li>
         <li>
           <Link to="/teams/call-of-duty">Call of Duty</Link>
@@ -29,7 +29,7 @@ function TeamsSubMenu({isActive, toggleSubMenu, closeSubMenu}) {
         </li>
       </ul>
     </div>
-  ) : null;
+  )
 }
 
 export default TeamsSubMenu;

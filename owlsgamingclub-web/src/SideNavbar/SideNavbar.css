@@ -1,6 +1,6 @@
 .side-nav {
   width: 250px;
-  height: 100vh;
+  height: 135vh;
   background-color: #003366; /* Background color for the sidebar */
   transition: left 0.3s ease;
   overflow-y: auto;
