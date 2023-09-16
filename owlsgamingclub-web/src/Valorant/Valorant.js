@@ -1,5 +1,5 @@
 import React from "react";
-import ValorantLogo from "../images/Valorant Logo.png";
+import ValorantLogo from "../images/ValorantLogo.png";
 import "./Valorant.css";
 
 function Valorant() {

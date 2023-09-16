@@ -1,13 +1,36 @@
-.cod-image{
+/* Default styles for larger screens */
+.cod-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .cod-image {
     height: 150px;
     width: 650px;
-    padding-top: 250px;
-    padding-left: 535px;
-}
-
-.cod-text{
+    max-width: 90%; /* Limit maximum width for smaller screens */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0; /* Reset padding */
+  }
+  
+  .cod-text {
     color: white;
-    font-size: 30px;
-    padding-left: 565px;
-
-}
+    font-size: 20px;
+    padding: 20px 0; /* Add padding for smaller screens */
+    text-align: center;
+  }
+  
+  /* Media query for screens narrower than 768px (standard tablet and below) */
+  @media (max-width: 768px) {
+    .cod-image {
+      height: auto; /* Maintain aspect ratio */
+      width: 80%; /* Adjust width for smaller screens */
+    }
+  
+    .cod-text {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      padding: 10px 0; /* Adjust padding for smaller screens */
+    }
+  }
+  

@@ -1,0 +1,42 @@
+/* Default styles for larger screens */
+.valorant-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .valorant-logo {
+    width: 450px;
+    height: 400px;
+    padding-left: 600px;
+  }
+  
+  .valorant-text {
+    color: white;
+    font-size: 20px;
+    padding-right: 555px;
+    text-align: center;
+  }
+  
+  /* Media query for screens narrower than 768px (standard tablet and below) */
+  @media (max-width: 768px) {
+    .valorant-section {
+      padding: 20px; /* Add padding for smaller screens */
+    }
+  
+    .valorant-logo {
+      width: 80%; /* Adjust width for smaller screens */
+      max-width: 350px; /* Limit maximum width */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0 auto; /* Center horizontally */
+      padding-left: 0; /* Reset padding */
+    }
+  
+    .valorant-text {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      padding: 0; /* Reset padding */
+      text-align: center;
+    }
+  }
+  

@@ -6,7 +6,7 @@ function Smash() {
   return (
     <div className="smash-section">
       <img src={SmashLogo} alt="smash-logo" className="smash-image" />
-      <p className="smash-section">
+      <p className="smash-text">
         Within our esports club, the Super Smash Bros. Ultimate team stands out
         as one of the most formidable and revered. Comprising players who rank
         among the top five in the entire state, their arrival from the
