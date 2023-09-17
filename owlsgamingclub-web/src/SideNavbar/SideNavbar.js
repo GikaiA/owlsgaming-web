@@ -5,7 +5,9 @@ import TeamsSubMenu from "../TeamsSubMenu/TeamsSubMenu";
 import "./SideNavbar.css";
 
 function SideNavbar() {
+  
   return (
+    <div className={`side-nav fade-in`}>
     <div className="side-nav">
       <div className="logo">
         <img src={owlsesports} alt="owlsesports-logo" width={250} height={250} />
@@ -31,6 +33,7 @@ function SideNavbar() {
           </Link>
         </li>
       </ul>
+    </div>
     </div>
   );
 }

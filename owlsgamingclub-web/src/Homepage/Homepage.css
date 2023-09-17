@@ -7,6 +7,9 @@
     height: 100vh; /* Ensure the container takes up the full viewport height */
 }
 
+.fade-in{
+    animation: fadeIn 1s ease-in;
+}
 
 .homepage-title{
     color: white;
@@ -25,3 +28,12 @@
 .Typewriter__cursor{
     color: #CC0000;
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

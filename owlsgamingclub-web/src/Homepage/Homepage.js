@@ -15,6 +15,7 @@ function Homepage() {
   // ];
 
   return (
+    <div className={`homepage-section fade-in`}>
     <div className='homepage-section'>
       <ColorTransition/>
       {/* <BackgroundSlider images={images} duration={5} transition={2}/> */}
@@ -28,6 +29,7 @@ function Homepage() {
             }}
           />
       <span className='typewriter'></span>
+    </div>
     </div>
   )
 }

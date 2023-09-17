@@ -1,22 +1,29 @@
 /* Default styles for larger screens */
 .valorant-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: slideIn 1s ease-in-out;
+  padding-top: 150px;
   }
   
   .valorant-logo {
     width: 450px;
     height: 400px;
-    padding-left: 600px;
+    max-width: 90%; /* Limit maximum width for smaller screens */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0; /* Reset padding */
+    animation: slideIn 1s ease-in-out 0.5s;
   }
   
   .valorant-text {
     color: white;
-    font-size: 20px;
-    padding-right: 555px;
+    font-size: 18px;
+    padding: 20px 0; /* Add padding for smaller screens */
     text-align: center;
+    padding-right: 250px;
+    animation: slideIn 1s ease-in-out 1s;
   }
   
   /* Media query for screens narrower than 768px (standard tablet and below) */
@@ -34,9 +41,19 @@
     }
   
     .valorant-text {
-      font-size: 16px; /* Adjust font size for smaller screens */
+      font-size: 25px; /* Adjust font size for smaller screens */
       padding: 0; /* Reset padding */
       text-align: center;
     }
   }
   
+  @keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

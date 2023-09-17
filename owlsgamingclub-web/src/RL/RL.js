@@ -5,8 +5,8 @@ import "./RL.css";
 function RL() {
   return (
     <div className="rocket-league-section">
-      <img src={RLlogo} alt="rocketleague" className="rl-image"/>
-      <p className="rl-paragraph">
+      <img src={RLlogo} alt="rocketleague-text" className="rl-image"/>
+      <p className="rl-text">
         It all began in Fall 2020 amidst the Covid-19 pandemic, when FAU Rocket
         League was restarted and began their journey. Throughout their history,
         FAU RL has undergone some changes, from being Club owned to testing a

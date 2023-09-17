@@ -12,6 +12,7 @@ import OW from './OW/Ow';
 import Valorant from './Valorant/Valorant';
 import RL from './RL/RL';
 import LoL from './LoL/LoL';
+import Smash from './Smash/Smash';
 import TeamsSubMenu from './TeamsSubMenu/TeamsSubMenu';
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
           <Route path='/teams/overwatch' element={<OW/>}/>
           <Route path='/teams/valorant' element={<Valorant/>}/>
           <Route path='/teams/rocket-league' element={<RL/>}/>
-          
+          <Route path='/teams/smash' element={<Smash/>}/>
         </Routes>
         </div>
       </BrowserRouter>
