@@ -19,7 +19,7 @@
   
   .valorant-text {
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     padding: 20px 0; /* Add padding for smaller screens */
     text-align: center;
     padding-right: 250px;
@@ -41,7 +41,7 @@
     }
   
     .valorant-text {
-      font-size: 25px; /* Adjust font size for smaller screens */
+      font-size: 16px; /* Adjust font size for smaller screens */
       padding: 0; /* Reset padding */
       text-align: center;
     }

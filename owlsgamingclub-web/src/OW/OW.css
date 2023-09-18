@@ -1,19 +1,54 @@
-.ow-section{
-    
+.overwatch-section{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: slideIn 1s ease-in-out;
+    padding-top: 250px;  
 }
 
-
-
-
 .ow-image{
-    width: 250px;
+    width: 450px;
     height: 300px;
     padding-top: 280px;
     padding-left: 550px;
+    max-width: 90%; /* Limit maximum width for smaller screens */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0; /* Reset padding */
+    animation: slideIn 1s ease-in-out 0.5s;
 }
 
 .ow-text{
     color: white;
-    font-size: 30px;
-    padding-left: 610px;
+    font-size: 25px;
+    padding: 20px 0; /* Add padding for smaller screens */
+    text-align: center;
+    padding-right: 250px;
+    animation: slideIn 1s ease-in-out 1s; 
 }
+
+/* Media query for screens narrower than 768px (standard tablet and below) */
+@media (max-width: 768px) {
+   .ow-image {
+     height: auto; /* Maintain aspect ratio */
+     width: 80%; /* Adjust width for smaller screens */
+   }
+ 
+   .ow-text {
+     font-size: 16px; /* Adjust font size for smaller screens */
+     padding: 10px 0; /* Adjust padding for smaller screens */
+   }
+ }
+
+ @keyframes slideIn {
+   0% {
+     transform: translateY(100%);
+     opacity: 0;
+   }
+   100% {
+     transform: translateY(0);
+     opacity: 1;
+   }
+ }
+ 
+ 
