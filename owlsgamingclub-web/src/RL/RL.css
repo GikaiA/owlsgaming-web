@@ -7,6 +7,25 @@
     padding-top: 150px;
 }
 
+.rl-wrapper{
+  background-image: url('../images/RL-bg.png');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
 .rl-image{
     width: 250px;
     height: 300px;

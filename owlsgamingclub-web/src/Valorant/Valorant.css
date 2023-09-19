@@ -7,6 +7,22 @@
   animation: slideIn 1s ease-in-out;
   padding-top: 150px;
   }
+
+  .valorant-wrapper{
+    background-image: url('../images/valorant-wallpaper-updated.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    animation: fadeIn 1s ease-in;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   
   .valorant-logo {
     width: 450px;

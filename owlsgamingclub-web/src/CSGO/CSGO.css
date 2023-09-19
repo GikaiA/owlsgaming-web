@@ -7,9 +7,29 @@
     padding-top: 150px;
 }
 
+.csgo-wrapper{
+  background-image: url('../images/csgo-wallpaper-updated.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
 .csgo-image{
     width: 450px;
-    height: 280px;
+    height: 166px;
     max-width: 90%; /* Limit maximum width for smaller screens */
     margin: 0 auto; /* Center horizontally */
     padding: 0; /* Reset padding */

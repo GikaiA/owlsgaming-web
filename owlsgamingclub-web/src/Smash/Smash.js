@@ -4,6 +4,7 @@ import "./Smash.css";
 
 function Smash() {
   return (
+    <div className="smash-wrapper">
     <div className="smash-section">
       <img src={SmashLogo} alt="smash-logo" className="smash-image" />
       <p className="smash-text">
@@ -20,6 +21,7 @@ function Smash() {
         exceptional group of players in their quest for future trophies and
         further glory in the world of Super Smash Bros. Ultimate esports.
       </p>
+    </div>
     </div>
   );
 }

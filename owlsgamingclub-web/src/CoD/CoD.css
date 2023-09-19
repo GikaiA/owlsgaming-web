@@ -6,13 +6,24 @@
     height: 100vh;
     animation: slideIn 1s ease-in-out;
     padding-top: 150px;
-    background-image: url('../images/MWII\ wallpaper-updated.png');
-    background-size: cover; /* This will cover the entire container with the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-attachment: fixed; /* Keep the image fixed while scrolling */
-    /* Add any other background-related styles here */
   }
   
+  .call-of-duty-wrapper{
+    background-image: url('../images/MWII\ wallpaper-updated.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    animation: fadeIn 1s ease-in;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
   .cod-image {
     height: 150px;
     width: 650px;

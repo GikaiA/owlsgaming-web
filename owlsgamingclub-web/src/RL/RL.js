@@ -4,6 +4,7 @@ import "./RL.css";
 
 function RL() {
   return (
+    <div className="rl-wrapper">
     <div className="rocket-league-section">
       <img src={RLlogo} alt="rocketleague-text" className="rl-image"/>
       <p className="rl-text">
@@ -21,6 +22,7 @@ function RL() {
         with every step. They are now ranked in the TOP 50 schools in the
         country and only going up. FAU RL is the REAL DEAL.
       </p>
+    </div>
     </div>
   );
 }

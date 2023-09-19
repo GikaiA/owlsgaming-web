@@ -7,9 +7,26 @@
     padding-top: 250px;  
 }
 
+.ow-wrapper{
+  background-image: url('../images/ow-bg-updated.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; 
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .ow-image{
     width: 450px;
-    height: 300px;
+    height: 260px;
     padding-top: 280px;
     padding-left: 550px;
     max-width: 90%; /* Limit maximum width for smaller screens */
@@ -25,6 +42,7 @@
     text-align: center;
     padding-right: 250px;
     animation: slideIn 1s ease-in-out 1s; 
+    /* background-color: #003366; */
 }
 
 /* Media query for screens narrower than 768px (standard tablet and below) */

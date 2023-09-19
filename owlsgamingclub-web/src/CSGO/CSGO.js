@@ -4,6 +4,7 @@ import "./CSGO.css";
 
 function CSGO() {
   return (
+    <div className="csgo-wrapper">
     <div className="csgo-section">
       <img src={CSGOLogo} alt="csgo-logo" className="csgo-image" />
       <p className="csgo-text">
@@ -19,6 +20,7 @@ function CSGO() {
         would undoubtedly shape their future endeavors in the world of
         competitive gaming.
       </p>
+    </div>
     </div>
   );
 }

@@ -4,6 +4,7 @@ import "./LoL.css";
 
 function LoL() {
   return (
+    <div className="LOL-wrapper">
     <div className="LOL-section">
       <img src={LOL} alt="LOL-logo" className="LOL-image" />
       <p className="LOL-text">
@@ -22,6 +23,7 @@ function LoL() {
         to chase success in the upcoming 2023-2024 season, eager to make their
         mark in the League of Legends esports realm.
       </p>
+    </div>
     </div>
   );
 }

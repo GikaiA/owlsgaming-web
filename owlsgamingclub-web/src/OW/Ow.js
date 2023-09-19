@@ -3,7 +3,8 @@ import OWLogo from "../images/OW Logo.png";
 import "./OW.css";
 
 function OW() {
-  return (
+  return (  
+    <div className="ow-wrapper">
     <div className="overwatch-section">
       <img src={OWLogo} alt="ow-logo" className="ow-image" />
       <p className="ow-text">
@@ -19,6 +20,7 @@ function OW() {
         determination reflects their unwavering commitment to excellence in
         Overwatch, and the future holds great promise for this dedicated squad.
       </p>
+      </div>
     </div>
   );
 }
