@@ -6,6 +6,11 @@
     height: 100vh;
     animation: slideIn 1s ease-in-out;
     padding-top: 150px;
+    background-image: url('../images/MWII\ wallpaper-updated.png');
+    background-size: cover; /* This will cover the entire container with the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the image fixed while scrolling */
+    /* Add any other background-related styles here */
   }
   
   .cod-image {
@@ -19,7 +24,7 @@
   
   .cod-text {
     color: white;
-    font-size: 25px;
+    font-size: 32px;
     padding: 20px 0; /* Add padding for smaller screens */
     text-align: center;
     padding-right: 250px;

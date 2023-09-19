@@ -1,5 +1,6 @@
 import React from "react";
 import COD from "../images/COD Logo.png";
+// import MW2 from '../images/MWII wallpaper2.png'
 import "./CoD.css";
 
 function CoD() {
