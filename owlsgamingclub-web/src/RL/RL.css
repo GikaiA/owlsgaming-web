@@ -8,7 +8,7 @@
 }
 
 .rl-wrapper{
-  background-image: url('../images/RL-bg.png');
+  background-image: url('../images/RL-bg.jpg');
   background-size: cover; 
   background-repeat: no-repeat; 
   background-attachment: fixed; 
@@ -24,8 +24,6 @@
   }
 }
 
-
-
 .rl-image{
     width: 250px;
     height: 300px;
@@ -37,7 +35,7 @@
 
 .rl-text{
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     padding: 20px 0; /* Add padding for smaller screens */
     text-align: center;
     padding-right: 250px;

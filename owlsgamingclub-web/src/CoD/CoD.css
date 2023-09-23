@@ -9,7 +9,7 @@
   }
   
   .call-of-duty-wrapper{
-    background-image: url('../images/MWII\ wallpaper-updated.png');
+    background-image: url('../images/MWII\ wallpaper-main.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -20,7 +20,7 @@
       opacity: 0;
     }
     to {
-      opacity: 1;
+      opacity: 0.5;
     }
   }
 
@@ -35,7 +35,7 @@
   
   .cod-text {
     color: white;
-    font-size: 32px;
+    font-size: 18px;
     padding: 20px 0; /* Add padding for smaller screens */
     text-align: center;
     padding-right: 250px;

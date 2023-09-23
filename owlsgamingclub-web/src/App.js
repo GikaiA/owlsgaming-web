@@ -5,7 +5,6 @@ import Homepage from './Homepage/Homepage';
 import ColorTransition from './ColorTransition/ColorTransition';
 import About from './About/About';
 import './App.css';
-import './fonts/fonts.css'
 import CoD from './CoD/CoD';
 import CSGO from './CSGO/CSGO';
 import OW from './OW/Ow';

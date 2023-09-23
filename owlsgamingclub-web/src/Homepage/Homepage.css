@@ -7,7 +7,7 @@
     height: 100vh; /* Ensure the container takes up the full viewport height */
 }
 
-.fade-in{
+.fade-in{ 
     animation: fadeIn 1s ease-in;
 }
 
