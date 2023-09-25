@@ -1,5 +1,5 @@
 .LOL-section{
-  display: block;
+    display: block;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -8,7 +8,7 @@
 }
 
 .LOL-wrapper{
-  background-image: url('../images/LOL-bg.jpg');
+    background-image: url('../images/LOL-bg.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -32,7 +32,6 @@
   margin: 0 auto; /* Center horizontally */
   padding: 0; /* Reset padding */
   animation: slideIn 1s ease-in-out 0.5s;
-
 }
 
 .LOL-text {

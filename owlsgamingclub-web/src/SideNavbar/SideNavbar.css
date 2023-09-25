@@ -12,6 +12,7 @@
 }
 
 .sidenav-links li {
+  font-family: "Cirrus";
   list-style: none;
   font-size: 22px; /* Adjust font size as needed */
   padding: 11px; /* Adjust padding as needed */
@@ -19,6 +20,7 @@
 }
 
 .sidenav-links a {
+  font-family: "Cirrus";
   text-decoration: none;
   color: white;
   display: block; /* To make the entire list item clickable */
@@ -38,6 +40,7 @@
 }
 
 .nav-link{
+  font-family: "Cirrus";
   color: white;
   background-color: transparent;
   border: none;
@@ -45,8 +48,6 @@
   padding-right: 12px;
   cursor: pointer;
   transition-duration: 0.5s;
-  font-family: auto;
-
 }
 
 .nav-link:hover{
