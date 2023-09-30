@@ -45,7 +45,7 @@
   background-color: transparent;
   border: none;
   font-size: 27px;
-  padding-right: 12px;
+  padding-left: 9px;
   cursor: pointer;
   transition-duration: 0.5s;
 }
@@ -55,11 +55,11 @@ text-decoration: underline;
 text-decoration-color: #CC0000;
 text-decoration-thickness: 5px;
 }
-
+/* 
 .fade-in{
   animation: fadeIn 1s ease-in;
-}
-
+} */
+/* 
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -67,4 +67,4 @@ text-decoration-thickness: 5px;
   to {
     opacity: 1;
   }
-}
+} */

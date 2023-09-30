@@ -2,9 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './TeamsSubMenu.css';
 
-function TeamsSubMenu() {
+function TeamsSubMenu({isActive, closeSubMenu}) {
   return(
     <div className='submenu'>
+      <div className={`teams-submenu ${isActive ? "active" : ""}`}
+      onMouseLeave={closeSubMenu} 
+    >
       <ul className='submenu-active'>
         <li>
           <Link to="/teams/league-of-legends">League of Legends</Link>
@@ -28,6 +31,7 @@ function TeamsSubMenu() {
           <Link to="/teams/csgo">CSGO</Link>
         </li>
       </ul>
+      </div>
     </div>
   )
 }

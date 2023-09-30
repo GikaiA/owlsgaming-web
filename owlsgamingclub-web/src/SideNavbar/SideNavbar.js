@@ -5,9 +5,23 @@ import TeamsSubMenu from "../TeamsSubMenu/TeamsSubMenu";
 import "./SideNavbar.css";
 
 function SideNavbar() {
+
+  const [showSubMenu, setShowSubMenu] = useState(false);
+
+  const toggleSubMenu = () =>{
+    setShowSubMenu(!showSubMenu)
+  };
+
+  const openSubMenu = () =>{
+    setShowSubMenu(true);
+  };
+
+  const closeSubMenu = () =>{
+    setShowSubMenu(false);
+  };
   
   return (
-    <div className={`side-nav fade-in`}>
+    // <div className={`side-nav fade-in`}>
     <div className="side-nav">
       <div className="logo">
         <img src={owlsesports} alt="owlsesports-logo" width={250} height={250} />
@@ -24,8 +38,13 @@ function SideNavbar() {
           </Link>
         </li>
         <li>
-        <button className='nav-link'>Teams</button>
-        { <TeamsSubMenu/>}
+          <button className={`nav-link ${showSubMenu ? 'active' : ''}`}
+          onMouseEnter={() => {openSubMenu(); toggleSubMenu();}}
+          onMouseLeave={() => {closeSubMenu(); toggleSubMenu();}}
+          >
+            Teams
+          </button>
+          {showSubMenu && <TeamsSubMenu />}
         </li>
         <li>
           <Link to="/contact" className="nav-link">
@@ -34,7 +53,7 @@ function SideNavbar() {
         </li>
       </ul>
     </div>
-    </div>
+    // </div>
   );
 }
 
