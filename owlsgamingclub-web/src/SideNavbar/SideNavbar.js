@@ -21,10 +21,10 @@ function SideNavbar() {
   };
   
   return (
-    // <div className={`side-nav fade-in`}>
+    <div className={`side-nav fade-in`} onMouseLeave={() => { closeSubMenu();}}>
     <div className="side-nav">
       <div className="logo">
-        <img src={owlsesports} alt="owlsesports-logo" width={250} height={250} />
+        <img src={owlsesports} alt="owlsesports-logo" width={200} height={200} />
       </div>
       <ul className="sidenav-links">
         <li>
@@ -40,7 +40,6 @@ function SideNavbar() {
         <li>
           <button className={`nav-link ${showSubMenu ? 'active' : ''}`}
           onMouseEnter={() => {openSubMenu(); toggleSubMenu();}}
-          onMouseLeave={() => {closeSubMenu(); toggleSubMenu();}}
           >
             Teams
           </button>
@@ -53,7 +52,7 @@ function SideNavbar() {
         </li>
       </ul>
     </div>
-    // </div>
+    </div>
   );
 }
 
