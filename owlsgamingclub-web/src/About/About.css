@@ -1,7 +1,36 @@
 .about-section{
     color: white;
-    font-size: 32px;
     text-align: center;
     padding-top: 560px;
+    height: 58.4vh;
     display: block;
+    animation: slideIn 1s ease-in-out;
 }
+
+.about-section-bg-wrapper{
+    background-image: url('../images/about-bg.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    animation: fadeIn 1s ease-in; 
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

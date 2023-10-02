@@ -2,7 +2,7 @@
     display: block;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90.4vh;
     animation: slideIn 1s ease-in-out;
     padding-top: 150px;
 }
@@ -24,9 +24,6 @@
   }
 }
 
-
-
-
 .csgo-image{
     width: 450px;
     height: 166px;
@@ -47,7 +44,9 @@
 /* * Media query for screens narrower than 768px (standard tablet and below) */ 
   @media (max-width: 768px) {
     .csgo-section {
+      display: block;
       padding: 20px; /* Add padding for smaller screens */
+      align-items: center;
     }
   
     .csgo-image {
